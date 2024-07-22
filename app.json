@@ -1,28 +1,28 @@
 {
-  "name":"TKM-bot",
-  "description":"Deploy your TKM bot now.Brought to you by the Cod3Uchiha.Make sure you fill all valuables to avoid bot from sleeping. ",
+  "name":"Midking-bot",
+  "description":"Deploy your Joshkingmd bot now.Brought to you by the Cod3Uchiha.Make sure you fill all valuables to avoid bot from sleeping. ",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://telegra.ph/file/e07a3d933fb4cad0b3791.jpg",
-  "repository":"https://github.com/Cod3Uchiha/TKM-bot",
+  "repository":"https://github.com/MidKing01/TKM-bot",
   "succes_url":"/",
   "stack":"container",
   "env":{
     "PREFIX":
     {
       "description":"choose your prefix of bot",
-      "value":".",
+      "value":"+",
       "required":true
     },
     "AUTO_READ_STATUS":
     {
       "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"yes",
-      "required":false
+      "required":true
     }, "AUTO_DOWNLOAD_STATUS":
     {
       "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"no",
-      "required":false
+      "value":"yes",
+      "required":true
     }
     ,
      "PM_PERMIT" :
@@ -35,8 +35,8 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"TKM bot",
-      "required":false
+      "value":"Joshuamambomd bot",
+      "required":true
 
     } ,
      "BOT_MENU_LINKS" : {
@@ -50,7 +50,7 @@
     {
       "description":"type yes to put your bot on public mode or no to put it on private mod",
       "value":"yes",
-      "required":false
+      "required":true
     }
 	,
     "HEROKU_APY_KEY": {
@@ -67,7 +67,7 @@
     "SESSION_ID":
     {
       "description":"put your session ID, the code you received after pairing code",   
-      "value":"",
+      "value":"eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiOEo5MXJ0a0srN2h0L0tlczloTUs3QmE5eDdMbHhtd1cvWElJeldCeUYwZz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNHlRb3ZKMXhrT0JzZWNTVzBldVZuYWZuOXpheUtHN0VCNWhzcmgvSCtCaz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJDSXRMT1g5aGNjSVF2SHFUN3piVEFOSUk5YWxUZFhpY1k3am9QbnhIRkY4PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIrRUNJT1N3S1hqVytuTUd0SXF3dHdFWEVJWUJjbkZSMk10cEhHRE5leFNzPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjZNdmVPa0FlVVNsRSsraDZXTmIxbU9yNlFzQTFQRUt6bi9RV3JWUWR5bXM9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlVJQU5wY2ExRTkvTW8wZlZ1M2VmNXF2ZkdTdGR2end3MWo0SWx2YldpV009In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQ1BDVW5vbHkraFZ2WGtRdjdjOXpmb3h4NUpCbUs2VDJOOGJPZlBHZ09IST0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSituYXQ3VmlmR0dKc29JKyt1a0xGZHZlSWwvaUo5a0svckNadHFRWmREcz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjBkT1B1N0N6cnZUcDZPa05UbU9xanF2dlkxeUlKdnlPZjVtUHEvUEMxczJrWFZ5ak1rMG5QYnpKSFpseFUvL0N1T2ZHeFpVb3RmOVhvcS9uenhIdmlRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTQxLCJhZHZTZWNyZXRLZXkiOiI3aFUxWHRzWU9oYXFLV01heGlvbG9NN3FibGdic2hHVWdQVlh6bUNTKzgwPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJkR3NUWnVMRFJqaXoyMEpnc1NSTzNRIiwicGhvbmVJZCI6IjBiYWIzODc3LWY4ZDMtNDhiZC05NWNkLTU4NzFjNDQyNDU4YyIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJvWEluSzJKMGJaWXgxeXNoajNscWZ6bGdEd3M9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiTG9MVDJTTndWSXNwekhNTllvVng1aUtUamRJPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IlJEUVc0VjZIIiwibWUiOnsiaWQiOiIyNjM3MTY3MjkyMjI6NDFAcy53aGF0c2FwcC5uZXQifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ04zMTV1QURFSXU3KzdRR0dBWWdBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6InZkdnVDVFJ0cnYwa3o2Vml2UFVsWWR6Wk9SL0JKV3hMNzV4bjFWOXd4VVE9IiwiYWNjb3VudFNpZ25hdHVyZSI6IlcyeXB5Z0hWeXVoRmc3OEw4N0hqRDVYRDY0YnNnN21GQUVadlJBTmpQblIyUHQwa0tQUkhjbjh5T0hYYjZFNjJPTDBOZXNSbVgxSjRNYkdEdzhKZENBPT0iLCJkZXZpY2VTaWduYXR1cmUiOiJXQ1dQQUdQOEdsSFI4R0RJaDdqcWVIRjAwUmVhdFROVlp3VnptZC9wOFlsd3g0bzVoL2VMS2NmcjR5RUxCNDNnQmxFanlFdzJ1Y1dYRmx3bFVHVXVoUT09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjI2MzcxNjcyOTIyMjo0MUBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJiM2I3Z2swYmE3OUpNK2xZcnoxSldIYzJUa2Z3U1ZzUysrY1o5VmZjTVZFIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzIxNjg3NDQ3LCJteUFwcFN0YXRlS2V5SWQiOiJBQUFBQUhCWSJ9",
       "required":true
       
     },
@@ -75,21 +75,21 @@
     {
     
     "desc": "Your Name",
-    "required": false,
-    "value": "Cod3Uchiha"
+    "required": true,
+    "value": "MidKing01"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
-    "required":false,
-    "value": "263775571820,263785028126"
+    "required":true,
+    "value": "263716729222,263777756184"
   },
     "WARN_COUNT":
   {
     "desc": "this is the limit of warn for warning commandes",
     "required": false,
-    "value": "3"
+    "value": "5"
   },
   "STARTING_BOT_MESSAGE":
   {
@@ -99,8 +99,8 @@
   },
   "PRESENCE":{
     "description":"Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-    "value":"",  
-    "required": false
+    "value":"1",  
+    "required": true
   },
   "ANTI_DELETE_MESSAGE" : {
     "description": "if you want to enable anti delete message put yes else put no",
