@@ -1,5 +1,5 @@
 {
-  "name": "TKM bot",
+  "name": "MidKing01md",
   "version": "1",
   "description": "",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "Tkm bot",
     "CodeUchiha"
   ],
-  "author": "Cod3Uchiha",
+  "author": "Joshkingmd",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
